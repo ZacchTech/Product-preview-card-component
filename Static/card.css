@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(30, 38%, 92%);
+    font-family: Montserrat;
+}
+
+.container{
+    display: flex;
+    margin-top: 5rem;
+    flex-direction: row;
+    background-color:  hsl(0, 0%, 100%);
+    justify-self: center;
+    gap: 3rem;  
+    border-radius: 20px 15px 16px;
+    width: 680px;
+    overflow: hidden;
+}
+ body{
+  max-width: 1440px;
+  margin: auto;
+ }
+
+
+.perfume{
+    color: hsl(228, 12%, 48%) ;
+    font-size: 2rem;
+    font-weight: 10rem;
+}
+
+.cont{
+    background-image: url("../images/image-product-desktop.jpg"); 
+    width: 90%;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.text-container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 80%;
+    padding: 30px 20px 30px 0;
+}
+.text-container p{
+    padding: 15px;
+    padding-left: 0;
+}
+
+.money{
+    color: hsl(158, 36%, 37%) ;
+    font-weight: bold;
+    font-size: 5rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+span{
+    color:  hsl(228, 12%, 48%);
+    font-size: 1.6rem;
+    text-decoration: line-through;
+    padding-left: 1rem;
+}
+
+
+.text-container button{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    font-size: 15px;
+    background-color: hsl(158, 36%, 37%);
+    color:  hsl(0, 0%, 100%);
+    border: none;
+    width: 70%;
+    padding-left: 40px;
+    border-radius: 6px;
+}
+
+button:hover{
+    background-color:hsl(158, 42%, 18%) ;
+}
+
+ h1{
+    
+    font-size: 4rem;
+ }
+
+.attribution { font-size: 10px;
+     text-align: center; 
+     margin-top: 15px;
+     font-weight: bold;    
+    }
+
+.attribution a { color:
+     hsl(231, 80%, 42%);
+ }
+
+/* RESPONSIVENESS*/
+ @media (max-width: 600px) {
+  .container {
+    max-width: 90vw;        
+  }
+
+  html{
+    font-size: 52.5%;
+}
+
+ h1{
+    font-size: 3rem;
+ }
+
+ .money{
+    font-size: 3rem;
+}
+
+.container{
+    margin-top: 16rem;
+    gap: 1rem;
+}
+
+.cont{
+    width: 100%;
+}
+
+.text-container{
+    flex-basis: 100%;
+}
+}
+
+
+
+/* MOBILE RESPONSIVE */
+ @media (max-width: 520px) {
+    .container{
+        flex-direction: column;
+        margin-top: 3rem;
+    }
+    .cont{
+    background-image: url("../images/image-product-mobile.jpg"); 
+    height: 300px;
+    background-size: cover;
+}
+
+.text-container{
+    padding: 30px 20px;
+}
+ }
